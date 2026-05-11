@@ -3,26 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro Dom</title>
+    <title>Mi primer blog</title>
+        <!--Link con las hojas de stilos-->
+    <link rel="stylesheet" href="./estilos/reset.css"><!--resetear los estilos del navegador-->
+    <link rel="stylesheet" href="./estilos/general.css">
 </head>
 <body>
-    <h1 id="titulo">Intro al DOM</h1>
-    <p id="contenido-principal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magni reprehenderit dolorem dicta? Dicta voluptatibus, sed optio voluptas eaque atque nulla exercitationem vel quos nostrum necessitatibus blanditiis quaerat officia enim! Praesentium magni debitis nihil placeat saepe veritatis repellat blanditiis ut accusamus perspiciatis? Maiores beatae cumque accusantium ducimus architecto enim eligendi, tempora facilis reiciendis laboriosam sequi saepe autem inventore neque recusandae blanditiis a accusamus magnam dolor deleniti ratione molestias! Culpa laudantium sit soluta magnam a, dolor rerum accusamus, unde quo earum eligendi consectetur explicabo, perferendis at ratione tempora commodi eos. Numquam ex quas iure incidunt, iusto quos nam eaque deserunt facere!
-    </p>
 
-    <section id="sct-nuevo-contenido"></section>
+    <!--aca empieza el header-->
+<header>
+     <!--el div contiene el logo del cliente-->
+    <div class="logo">
+        <img src="./imagenes/logokp.png" alt="Logokp">
+    </div>  
 
-    <h2 id="titulo-secundario">TODO List</h2>
-    <ul>
-        <li>Estudiar HTML</li>
-        <li>Estudiar CSS</li>
-        <LI>Realizar practicas de validaciones</LI>
-    </ul>
+    <!--el nav contiene el menu de navegacion-->
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Pasatiempos</a>
+        <a href="#">Metas</a>
+    </nav>
 
-    <p id="contenido-extra">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum illo, quaerat, soluta laboriosam, tempore necessitatibus reprehenderit numquam magnam optio culpa velit? Dolor expedita voluptatum facere similique ad pariatur. Recusandae placeat reprehenderit repellendus quisquam at consectetur excepturi maiores incidunt! Natus perferendis, vel earum reprehenderit unde nesciunt inventore hic sit qui maiores magnam facere quia minus nam repellendus magni, molestias explicabo aliquam recusandae iure. Alias, dicta unde obcaecati non quas dolores reprehenderit impedit soluta saepe? Est iusto, quo molestiae fugiat consequuntur nisi quasi ipsa quae, officia at labore. Tenetur ipsam atque dicta? Cum expedita dicta sint ratione ipsum laboriosam assumenda eveniet blanditiis.</p>
+</header>
+    <!--aca termina el header-->
 
-    <button id="btn-boton1" type="button">CLICK ME</button>
+<!--aca empieza la seccion del banner -->  
+<!--la imagen la ponemos con css porque queremos sea todo el fondo --> 
+<section id="banner">
+    <div class="linkedin">
+        <button class="btn-general">LinkedIn</button>
+    </div>
+</section>
+<!--aca termina la seccion del banner --> 
 
-    <script src="/main.js"></script>
+
+
+<!-- seccion de pasatiempos-->
+<section id="sct-cuadros">
+
+    <h2>PASATIEMPOS</h2>
+        
+    <div id="contenedor">
+        <div class="cuadro">
+            <div class="info-plan">
+                <p>Pasatiempo 1</p>
+                <P><br>Ver anime, leer manga</P>
+            </div>
+        </div>
+
+        <div class="cuadro">       
+            <div class="info-plan">
+                <p>Pasatiempo 2</p>
+                <P><br>Ir a nadar a la piscina temperada</P>
+            </div>
+        </div>
+
+        <div class="cuadro">       
+            <div class="info-plan">
+                <p>Pasatiempo 3</p>
+                <P><br>Ir al cine o ver peliculas en la casa</P>
+            </div>
+        </div>
+    </div> <!--aqui termina div contenedor-->
+
+</section>
+
+ <!-- seccion de metas-->
+<section id="sct-cuadros">
+
+
+    <h2>METAS</h2>
+
+    <div id="contenedor">  
+        <div class="cuadro">
+            <div class="info-plan">
+                <p>Meta 1</p>
+                <P><br>Sacar mi titulo de Tecnico en Diseño Web y Experiencia de Usuario en la Universidad Cenfotec</P>
+            </div>
+        </div>
+
+        <div class="cuadro">
+            <div class="info-plan">
+                <p>Meta 2</p>
+                <P><br>Quiero aprender Lengua de Señas Costarricense (LESCO)</P>
+            </div>
+         </div>
+
+        <div class="cuadro">
+            <div class="info-plan">
+                <p>Meta 3</p>
+                <P><br>Empezar una nueva carrera para el 2024</P>
+            </div>
+        </div>
+
+    </div> <!--aqui termina div contenedor-->
+
+    <div class="linkedin_bottom">
+        <button class="btn-general">LinkedIn</button>
+    </div>
+
+</section>
+
 </body>
 </html>
